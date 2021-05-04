@@ -9,9 +9,19 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet var redTrafficLight: UIView!
+    @IBOutlet var yellowTrafficLight: UIView!
+    @IBOutlet var greenTrafficLight: UIView!
+    
+    @IBOutlet var startButton: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        redTrafficLight.layer.cornerRadius = 105
+        yellowTrafficLight.layer.cornerRadius = 105
+        greenTrafficLight.layer.cornerRadius = 105
+        startButton.layer.cornerRadius = 20
     }
 
 
